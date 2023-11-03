@@ -1,17 +1,19 @@
-package modelo;
+package com.faculdade.modelo;
 
 public class Produto {
-    String codigo;
+    Long codigo;
     String descricao;
     Double valor;
 
-    public Produto (String codigo, String descricao, Double valor){
-        this.codigo = "codigo";
-        this.descricao = "Descrição";
-        this.valor = 2.4;
-    }
+//    public Produto (Long codigo, String descricao, Double valor){
+//        this.codigo = codigo;
+//        this.descricao = descricao;
+//        this.valor = valor;
+//    }
 
-    public String getCodigo() {
+    public Produto() {
+    }
+    public Long getCodigo() {
         return this.codigo;
     }
     public String getDescricao() {
@@ -20,7 +22,7 @@ public class Produto {
     public Double getValor() {
         return this.valor;
     }
-    public void setCodigo(String cod) {
+    public void setCodigo(Long cod) {
         this.codigo = cod;
     }
     public void setDescricao(String desc) {
